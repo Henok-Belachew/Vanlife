@@ -1,0 +1,159 @@
+.filters {
+    display: flex;
+    /* gap: 10px; */
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.filters button, .clear {
+    width: 23%;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+.filter{
+    background-color: #FFEAD0;
+}
+
+.clear, .vans {
+    background-color: #FFF7ED;
+}
+
+.clear {
+    text-decoration: underline;
+}
+.vans {
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    /* outline: solid red; */
+    gap: 20px;
+}
+
+/* Styling Vans Display */
+
+.all-vans {
+    display: flex;
+    /* outline: solid red; */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px 0;
+
+    /* overflow-wrap: ; */
+}
+
+.van {
+    width: 46%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    cursor: pointer;
+    /* align-items: flex-start; */
+}
+
+.van h2 {
+    font-size: medium;
+}
+
+.van h2 span {
+    font-weight:lighter;
+    font-size: small;
+}
+.van-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.btm {
+    justify-self: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btm h2:nth-child(1) {
+    font-size: 14px;
+}
+.van-typ {
+    padding: 9px 15px;
+   
+    color: white;
+    border-radius: 5px;
+    font-size: 12px;
+    align-self: flex-start;
+}
+
+.van-smp {
+    background-color: #E17654;
+}
+
+.van-lux {
+    background-color: #161616;
+}
+
+.van-rug {
+    background-color: #115E59;
+}
+
+
+/* Styling vanDetail  */
+
+.vanDetail {
+    display: flex;
+    flex-direction: column;
+    padding: 0 35px 20px;
+    background-color: #FFF7ED;
+    gap: 25px;
+    font-family: monospace;
+    line-height: 20px;
+    /* outline: solid red; */
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.vanDetail p {
+    font-size: 14px;
+    text-justify:inter-word;
+}
+
+.typ-dt {
+    padding: 10px 50px;
+}
+
+.vanDetail img {
+    border-radius: 15px;
+
+}
+
+.vanDetail h2:nth-child(4) {
+    font-size: 27px;
+}
+
+.vanDetail h2 span{
+    font-weight:lighter;
+    font-size: 20px;
+    
+}
+
+.back {
+    font-size: smaller;
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+
+
+.vanDetail button {
+    padding: 15px;
+    color: white;
+    border-radius: 7px;
+    border: none;
+    background-color: #E17654;
+    cursor: pointer;
+}

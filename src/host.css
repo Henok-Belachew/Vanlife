@@ -1,0 +1,95 @@
+.host-nav ul {
+    display: flex;
+    gap: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    padding: 20px 45px;
+    background-color: #FFF7ED;
+    font-weight: bold;
+
+}
+
+.wel {
+    background-color: #fadfbf;
+    padding: 30px 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.wel-btm {
+    background-color: #FFCC8D;
+    padding: 30px 45px;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: medium;
+}
+
+.thin {
+    font-weight: lighter;
+}
+
+.day {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+.van-list {
+    padding: 20px 35px;
+    background-color: #FFF7ED;
+}
+.list-top {
+    display: flex;
+    justify-content: space-between;
+    font-size: medium;
+}
+
+.list-top span {
+    font-weight: lighter;
+    font-size: small;
+}
+
+.van-card {
+    display: flex;
+    background-color: white;
+    gap: 15px;
+    border-radius: 10px;
+    padding: 15px;
+    /* outline: solid red; */
+}
+
+.van-left h2{
+    font-size: medium;
+
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 0;
+    /* margin: 5px 10px; */
+}
+.van-dt {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.list span  {
+    font-size: small;
+}
+.van-card img {
+    width: 60px;
+    border-radius: 10px;
+}
