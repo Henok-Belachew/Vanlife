@@ -4,9 +4,11 @@ import Vans from "./pages/Vans";
 import Van_Detail from "./pages/VansDetail";
 import About from "./pages/About";
 import Host from "./pages/host";
-import './index.css'
-import './host.css'
-import './vans.css'
+import logo from './images/logo.png'
+import './style.css'
+// import './index.css'
+// import './host.css'
+// import './vans.css'
 // import { About, Vans } from "./Components";
 import {BrowserRouter, Routes, Route, Link} from "react-router-dom"
 
@@ -18,11 +20,11 @@ export default function App () {
     return (
         
         
-        <div className="main">
+        <div className="main w-[500px] mx-auto px-10 py-5 bg-[#FFF7ED]">
             <BrowserRouter>
-        <nav className="main-nav">
-            <Link to="/"><h2>#VANLIFE</h2></Link>   
-            <ul>
+        <nav className="main-nav flex justify-between align-center outline-dotted">
+            <Link to="/"><img className="w-2/4" src={logo} alt="" /></Link>   
+            <ul className="flex gap-5 text-sm">
                 <Link to="/host"><li>Hosts</li></Link>
                 <Link to="/vans"><li>Vans</li></Link>   
                 <Link to="/about"><li>About</li></Link>   

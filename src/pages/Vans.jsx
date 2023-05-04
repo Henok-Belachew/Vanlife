@@ -31,7 +31,7 @@ export default function Vans () {
                 </div>
             </div>
 
-            <div className="all-vans">
+            <div className="all-vans flex flex-wrap gap-10">
                 {Vans}
             </div>
 

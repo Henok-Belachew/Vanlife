@@ -6,7 +6,7 @@ import img from "../images/about.png";
 export default function Home () {
     return (
        <div className="contianer hm">
-            <div className="contents hm-content">
+            <div className="contents hm-content w-full relative z-2">
                 <h1 id='title'>
                     You got the travel plans, we got the travel vans.
                 </h1>
@@ -21,8 +21,8 @@ export default function Home () {
                     </Link>
    
             </div>
-            <div className="bg"></div>
-            <img className="img1" src={img} alt="" />
+            {/* <div className="bg"></div> */}
+            <img className="absolute top-0 z-0 left-0 w-full" src={img} alt="" />
        </div>
     ) 
 }
