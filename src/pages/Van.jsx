@@ -26,15 +26,15 @@ export default function Van (props) {
       }, []);
 
     return (
-        <div className="flex bg-red-900">
+        <div className="w-[190px]">
            
-           <Link className='flex bg-red-900' to={`/vans/${props.id}`}> 
-                    <img className="bg-red-900" src={props.img} alt="" />
-                    <div className="flex justify-between">
-                        <h2>{props.name}</h2>
-                        <h2>${props.price}<span>/day</span> </h2>
+           <Link className="flex flex-col gap-2 items-start" to={`/vans/${props.id}`}> 
+                    <img className="rounded-md" src={props.img} alt="" />
+                    <div className="flex justify-between self-stretch">
+                        <h2 className="font-bold text-[15px]">{props.name}</h2>
+                        <h2 className='font-bold'>${props.price}<span className='font-light'>/day</span> </h2>
                     </div>
-                    <span style={ style } className="van-typ">{props.type}</span>   
+                    <span style={ style } className="px-8 py-2 rounded-md text-white text-sm">{props.type}</span>   
             </Link>
         </div>
     )

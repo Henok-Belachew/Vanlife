@@ -20,7 +20,7 @@ export default function App () {
     return (
         
         
-        <div className="w-[450px] mx-auto bg-red-300 relative">
+        <div className="w-[480px] mx-auto bg-[#FFF7ED] relative">
             <BrowserRouter>
         <nav className="flex justify-between items-center bg-[#FFF7ED] py-8 px-10">
             <Link to="/"><img className="w-[100px]" src={logo} alt="" /></Link>   
@@ -42,8 +42,8 @@ export default function App () {
         </div>
         
         </BrowserRouter>
-        <footer className="bg-[#252525] text-white text-xs text-center py-3">
-            <span>&copy; 2023 #VANLIFE</span>
+        <footer className="bg-[#252525] text-white text-[11px]  text-center py-3">
+            <span className="opacity-75">&copy; 2023 #VANLIFE</span>
         
         </footer>
         </div>

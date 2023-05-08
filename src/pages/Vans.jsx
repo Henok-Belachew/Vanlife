@@ -20,18 +20,18 @@ export default function Vans () {
         />)
     })
     return (
-       <div className="contianer vans">
+       <div className="px-10 bg-[#FFF7ED] mb-10 h-full">
             <div className="heading">
-                <h2>Explore our van options</h2>
-                <div className="filters">
-                    <button className="filter">Simple</button>
-                    <button className="filter">Luxury</button>
-                    <button className="filter">Rugged</button>
-                    <button className="clear">Clear filters</button>
+                <h2 className="text-[26px]  font-bold">Explore our van options</h2>
+                <div className="w-full flex justify-between my-4 text-xs">
+                    <button className="bg-[#FFEAD0] px-8 py-2 rounded-md">Simple</button>
+                    <button className="bg-[#FFEAD0] px-8 py-2 rounded-md">Luxury</button>
+                    <button className="bg-[#FFEAD0] px-8 py-2 rounded-md">Rugged</button>
+                    <button className="">Clear filters</button>
                 </div>
             </div>
 
-            <div className="flex flex-wrap gap-20">
+            <div className="flex flex-wrap gap-5 h-full">
                 {Vans}
             </div>
 

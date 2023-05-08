@@ -35,17 +35,17 @@ export default function Van_Detail () {
     
 
     return (
-        <div className="vanDetail">
+        <div className="px-10 flex flex-col items-start gap-4 mb-8">
             <Link  to="/vans">
             <span className="back"> -Back to all vans</span>
             </Link>
                  
-                 <img src={targetVan.imageUrl} alt="" />
-                 <span style={ style } className="van-typ typ-dt">{targetVan.type}</span>
-                 <h2>{targetVan.name}</h2>
-                 <h2>${targetVan.price}<span>/day</span> </h2>
-                 <p>{targetVan.description}</p>
-                 <button >Rent this van</button>
+                 <img className='rounded-lg' src={targetVan.imageUrl} alt="" />
+                 <span style={ style } className="px-10 py-2 text-white rounded-md text-sm">{targetVan.type}</span>
+                 <h2  className='text-[30px] font-bold p-0'>{targetVan.name}</h2>
+                 <h2 className='text-[20px] font-bold p-0'>${targetVan.price}<span className='font-light'>/day</span> </h2>
+                 <p className='leading-[20px] text-[15px]'>{targetVan.description}</p>
+                 <button className='bg-[#FF8C38] py-3 font-bold w-full rounded-lg text-sm text-white' >Rent this van</button>
         </div>
     )
 }
