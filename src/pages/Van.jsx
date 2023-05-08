@@ -26,10 +26,10 @@ export default function Van (props) {
       }, []);
 
     return (
-        <div className="van">
+        <div className="flex bg-red-900">
            
-           <Link className='a-van' to={`/vans/${props.id}`}> 
-                    <img className="van-img" src={props.img} alt="" />
+           <Link className='flex bg-red-900' to={`/vans/${props.id}`}> 
+                    <img className="bg-red-900" src={props.img} alt="" />
                     <div className="flex justify-between">
                         <h2>{props.name}</h2>
                         <h2>${props.price}<span>/day</span> </h2>

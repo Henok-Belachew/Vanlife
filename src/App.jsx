@@ -5,7 +5,7 @@ import Van_Detail from "./pages/VansDetail";
 import About from "./pages/About";
 import Host from "./pages/host";
 import logo from './images/logo.png'
-import './style.css'
+import './styles.css'
 // import './index.css'
 // import './host.css'
 // import './vans.css'
@@ -20,16 +20,17 @@ export default function App () {
     return (
         
         
-        <div className="main w-[500px] mx-auto px-10 py-5 bg-[#FFF7ED]">
+        <div className="w-[450px] mx-auto bg-red-300 relative">
             <BrowserRouter>
-        <nav className="main-nav flex justify-between align-center outline-dotted">
-            <Link to="/"><img className="w-2/4" src={logo} alt="" /></Link>   
+        <nav className="flex justify-between items-center bg-[#FFF7ED] py-8 px-10">
+            <Link to="/"><img className="w-[100px]" src={logo} alt="" /></Link>   
             <ul className="flex gap-5 text-sm">
-                <Link to="/host"><li>Hosts</li></Link>
+                <Link className="" to="/host"><li>Hosts</li></Link>
                 <Link to="/vans"><li>Vans</li></Link>   
                 <Link to="/about"><li>About</li></Link>   
             </ul>
         </nav>
+        <div className="relative">
         <Routes>
             <Route path="/about" element={<About/>}></Route>
             <Route path="/" element={<Home/>}></Route>
@@ -38,8 +39,10 @@ export default function App () {
             <Route path="/vans/:id" element={<Van_Detail/>}></Route>
             
         </Routes>
+        </div>
+        
         </BrowserRouter>
-        <footer>
+        <footer className="bg-[#252525] text-white text-xs text-center py-3">
             <span>&copy; 2023 #VANLIFE</span>
         
         </footer>
