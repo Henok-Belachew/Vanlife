@@ -57,7 +57,7 @@ export default function Host () {
                     <span className='text-sm'>Details</span>
             </div>
             <div className="px-10 my-5">
-                <h2 className='flex flex-row justify-between font-bold'>Your listed vans <span className='text-sm font-normal'>View all</span></h2>
+                <h2 className='flex flex-row justify-between font-bold text-lg'>Your listed vans <span className='text-sm font-normal'>View all</span></h2>
 
                 <div className="list my-5 flex flex-col gap-3">
 
@@ -66,7 +66,7 @@ export default function Host () {
                         <img src={img} className='w-[65px] rounded-md'  alt="" />
                         <div className="flex flex-row justify-between items-center w-full ml-2 text-sm">
                             <div className="">
-                                <h2 className='font-bold'>Modest Explorer</h2>
+                                <h2 className='font-bold '>Modest Explorer</h2>
                                 <span>$60/day</span>
                             </div>
 
