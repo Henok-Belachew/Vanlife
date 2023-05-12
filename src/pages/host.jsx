@@ -25,14 +25,13 @@ export function Van (props) {
 
 export default function Host () {
 
-    const all_vans = Data.map((a_van)=> {
+    const listed_vans = Data.map((a_van)=> {
         return (<Van 
             name = {a_van.name} 
             price = {a_van.price}
             img = {a_van.imageUrl}
             listed = {a_van.listed}
-            />)
-            
+            />)     
     })
 
     
@@ -40,20 +39,20 @@ export default function Host () {
         <div className=''>
             <nav className="host-nav">
                 <ul className='flex flex-row gap-10 px-10 my-5 text-sm'>
-                    <li>Dashboard</li>
-                    <li>Income</li>
-                    <li>Vans</li>
-                    <li>Reviews</li>
+                    <li className='cursor-pointer'>Dashboard</li>
+                    <li className='cursor-pointer'>Income</li>
+                    <li className='cursor-pointer'>Vans</li>
+                    <li className='cursor-pointer'>Reviews</li>
                 </ul>
             </nav>
 
-            <div className="wel px-10 bg-orange-100">
+            <div className="wel px-10 bg-orange-100 py-2">
                 <h1 className='text-[30px] py-2  font-bold'>Welcome!</h1>
                 <div className='flex-row flex justify-between text-sm'>
                     <span className=''>Income last <span className='underline font-semibold'>30 days</span></span>
                     <span className='cursor-pointer'>Details</span>
                 </div>
-                <h1 className='text-[32px] py-3 font-bold'>$2,260</h1>
+                <h1 className='text-[32px] py-2 font-bold'>$2,260</h1>
 
                 
             </div>
@@ -67,7 +66,7 @@ export default function Host () {
                 <div className="list my-5 flex flex-col gap-3">
 
                     {
-                        all_vans
+                        listed_vans
                     }
 
                 </div>
