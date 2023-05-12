@@ -3,7 +3,7 @@ import Home from "./pages/Home";
 import Vans from "./pages/Vans";
 import Van_Detail from "./pages/VansDetail";
 import About from "./pages/About";
-import Host from "./pages/host";
+import Host from "./pages/Host-dashboard";
 import logo from './images/logo.png'
 import './styles.css'
 // import './index.css'
