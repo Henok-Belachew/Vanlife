@@ -46,9 +46,9 @@ export default function InnerLayout () {
                 </div>
                 <nav className=''>
                     <ul className='flex flex-row gap-5 text-sm my-6 font-semibold text-[#4D4D4D]'>
-                        <NavLink end to={`/host/vans/${params.id}`}> <li>Details</li> </NavLink>
-                        <NavLink to={`/host/vans/${params.id}/pricing`}> <li>Pricing</li> </NavLink>
-                        <NavLink to={`/host/vans/${params.id}/photos`}> <li>Photos</li> </NavLink>
+                        <NavLink end to={`/host/vans/${params.id}`}> <li className='hover:text-black hover:underline'>Details</li> </NavLink>
+                        <NavLink to={`/host/vans/${params.id}/pricing`}> <li className='hover:text-black hover:underline'>Pricing</li> </NavLink>
+                        <NavLink to={`/host/vans/${params.id}/photos`}> <li className='hover:text-black hover:underline'>Photos</li> </NavLink>
                     </ul>
                 </nav>
                 <div>
