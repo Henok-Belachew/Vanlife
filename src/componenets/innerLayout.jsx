@@ -29,6 +29,12 @@ export default function InnerLayout () {
 
     const params = useParams()
     const targetVan = Data.find(van => van.id === params.id);
+
+    const styleNav = {
+        color: "#000000",
+        textDecoration: "underline",
+        fontWeight: "bolder"
+    }
     return (
         <div className='px-10'>
             <Link to="/host/vans"> <h3 className='text-sm underline font-semibold'> <FontAwesomeIcon icon={faArrowLeftLong} style={{color: "#000000",}} />  Back to all vans</h3> </Link> 
@@ -47,7 +53,7 @@ export default function InnerLayout () {
                 <nav className=''>
                     <ul className='flex flex-row gap-5 text-sm my-6 font-semibold text-[#4D4D4D]'>
                         <NavLink end to={`/host/vans/${params.id}`}> <li className='hover:text-black hover:underline'>Details</li> </NavLink>
-                        <NavLink to={`/host/vans/${params.id}/pricing`}> <li className='hover:text-black hover:underline'>Pricing</li> </NavLink>
+                        <NavLink style={({isActive}) =>  isActive ? styleNav : null}  to={`/host/vans/${params.id}/pricing`}> <li className='hover:text-black hover:underline'>Pricing</li> </NavLink>
                         <NavLink to={`/host/vans/${params.id}/photos`}> <li className='hover:text-black hover:underline'>Photos</li> </NavLink>
                     </ul>
                 </nav>
