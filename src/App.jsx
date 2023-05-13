@@ -3,8 +3,24 @@ import Home from "./pages/Home";
 import Vans from "./pages/Vans";
 import Van_Detail from "./pages/VansDetail";
 import About from "./pages/About";
-import Host from "./pages/Host-dashboard";
-import logo from './images/logo.png'
+import HostLayout from "./componenets/HostLayout";
+import HostVans from "./pages/Host/Vans";
+// import HostVans from "./componenets/hostVans";
+
+
+
+
+
+import Layout from "./componenets/layout";
+
+// Let's import the hosts pages
+import Dashboard from "./pages/Host/Dashboard";
+import Reviews from "./pages/Host/Reviews";
+import Income from "./pages/Host/Income";
+
+// import Layout from "./componenets/Layout.jsx";
+// import Layout from './componenets/Layout'
+
 import './styles.css'
 // import './index.css'
 // import './host.css'
@@ -18,38 +34,30 @@ export default function App () {
 
     
     return (
-        
-        
-        <div className="w-[480px] mx-auto bg-[#FFF7ED] relative">
-            <BrowserRouter>
-        <nav className="flex justify-between items-center bg-[#FFF7ED] py-8 px-10">
-            <Link to="/"><img className="w-[110px]" src={logo} alt="" /></Link>   
-            <ul className="flex gap-5 text-sm">
-                <Link className="" to="/host"><li>Hosts</li></Link>
-                <Link to="/vans"><li>Vans</li></Link>   
-                <Link to="/about"><li>About</li></Link>   
-            </ul>
-        </nav>
-        <div className="relative">
-        <Routes>
-            <Route path="/about" element={<About/>}></Route>
-            <Route path="/" element={<Home/>}></Route>
-            <Route path="/vans" element={<Vans/>}></Route>
-            <Route path="/host" element={<Host/>}></Route>
-            <Route path="/vans/:id" element={<Van_Detail/>}></Route>
-            
-        </Routes>
-        </div>
-        
-        </BrowserRouter>
-        <footer className="bg-[#252525] text-white text-[11px]  text-center py-3">
-            <span className="opacity-75">&copy; 2023 #VANLIFE</span>
-        
-        </footer>
-        </div>
-        
-        
+        <BrowserRouter>
+                <div className="w-[480px] mx-auto bg-[#FFF7ED] relative">
+                    {/* Nav header was here :( */}
+                <div className="relative">
+                <Routes>
+                    <Route element={<Layout/>}>
+                            <Route path="/about" element={<About/>}/>
+                            <Route path="/" element={<Home/>}/>
+                            <Route path="/vans" element={<Vans/>}/>
+                            {/* <Route path="/host" element={<Host/>}/> */}
+                            <Route path="/vans/:id" element={<Van_Detail/>}/>
 
-        
+                            <Route path="/host" element={<HostLayout/>}> 
+                                    <Route path="/host" element={<Dashboard/>}/>
+                                    <Route path="/host/income" element={<Income/>}/>
+                                    <Route path="/host/reviews" element={<Reviews/>}/>
+                                    <Route path="/host/vans" element={<HostVans/>}/>
+                            </Route>
+                            
+                    </Route>
+            
+                </Routes>
+                </div>        
+                </div>
+        </BrowserRouter>        
     )
 }
