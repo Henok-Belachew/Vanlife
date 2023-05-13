@@ -16,7 +16,7 @@ import { useState } from 'react'
 export default function Vans () {
 
     const [type, setType] = useState("all");
-    const [color, setColor ] = useState([{}, {}, {}])
+    
 
     const Vans = Data.map((van) => {
         const toReturn = <Van 

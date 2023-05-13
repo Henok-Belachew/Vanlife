@@ -42,7 +42,7 @@ export default function Reviews () {
                        
                 </div>
                 <h3 className='font-bold text-sm'>Sandy <span className='font-semibold text-[#4D4D4D]'>Novmember 23,2022</span></h3>
-                <p className='text-xs my-2 mb-5'>
+                <p className='text-xs my-2 mb-10'>
                     This is our third time using the Modes Explorer for our travels and we love it! No compliants, absolutely perfect!
                 </p>
                 

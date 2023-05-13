@@ -1,5 +1,5 @@
 import React from 'react'
-import img from '../images/van2.png'
+
 import { Outlet, NavLink, useParams, Link } from 'react-router-dom';
 import Data from '../API';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -25,7 +25,7 @@ export default function InnerLayout () {
     }
     useEffect(() => {
         updateStyle();
-      }, []);
+      });
 
     const params = useParams()
     const targetVan = Data.find(van => van.id === params.id);

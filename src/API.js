@@ -1,6 +1,6 @@
-import img from "./images/van1.png"
 
-export default [
+
+const api = [
     {
         id: "1", 
         name: "Modest Explorer", 
@@ -63,3 +63,5 @@ export default [
     listed: true 
     }  
 ]
+
+export default api;

@@ -5,7 +5,7 @@ import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 export function Van (props) {
 
-    if (props.listed == true) {
+    if (props.listed === true) {
     return (
         <div className='flex flex-row p-3 bg-white rounded-sm'>
             

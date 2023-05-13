@@ -1,7 +1,7 @@
 import React from "react";
 import Home from "./pages/Home";
 import Vans from "./pages/Vans";
-import Van_Detail from "./pages/VansDetail";
+import VanDetail from "./pages/VansDetail";
 import About from "./pages/About";
 import HostLayout from "./componenets/HostLayout";
 import HostVans from "./pages/Host/Vans";
@@ -29,9 +29,7 @@ import './styles.css'
 // import './host.css'
 // import './vans.css'
 // import { About, Vans } from "./Components";
-import {BrowserRouter, Routes, Route, Link} from "react-router-dom"
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {BrowserRouter, Routes, Route} from "react-router-dom"
 
 
 export default function App () {
@@ -48,7 +46,7 @@ export default function App () {
                             <Route path="/" element={<Home/>}/>
                             <Route path="vans" element={<Vans/>}/>
                             {/* <Route path="/host" element={<Host/>}/> */}
-                            <Route path="vans/:id" element={<Van_Detail/>}/>
+                            <Route path="vans/:id" element={<VanDetail/>}/>
 
                             <Route path="host" element={<HostLayout/>}> 
                                     <Route index element={<Dashboard/>}/>
