@@ -1,6 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Van from './Van'
 import Data from '../API'
+
+import { useState } from 'react'
+
+
+
 
 
 // import vans from "./images/vans.png"
@@ -9,16 +14,30 @@ import Data from '../API'
 
 
 export default function Vans () {
+
+    const [type, setType] = useState("Simple");
+
+
     const Vans = Data.map((van) => {
-        return (<Van 
+        const toReturn = <Van 
         id={van.id}
         name={van.name}
         price={van.price}
         type={van.type}
         desc = {van.description}
         img = {van.imageUrl}
-        />)
+        />
+        if (type == "all") {
+        return (toReturn) }
+        else {
+            if (van.type == type) {
+                return (
+                    toReturn
+                )
+            }  
+        }   
     })
+
     return (
        <div className="px-10 bg-[#FFF7ED] mb-10 h-full">
             <div className="heading">
