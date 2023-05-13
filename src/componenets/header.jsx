@@ -16,9 +16,9 @@ export default function Header () {
             <Link to="/"><img className="w-[110px]" src={logo} alt="" /></Link>   
             <ul className="flex gap-5 text-sm font-semibold text-[#4D4D4D]">
                 <NavLink style={({isActive}) =>  isActive ? style : null}  to="/host"><li className='hover:text-black hover:underline'>Hosts</li></NavLink>
-                <NavLink to="/vans" >
+                <NavLink style={({isActive}) =>  isActive ? style : null} to="/vans" >
                     <li className='hover:text-black hover:underline'>Vans</li></NavLink>   
-                <NavLink  to="/about"><li className='hover:text-black hover:underline'>About</li></NavLink>   
+                <NavLink  style={({isActive}) =>  isActive ? style : null} to="/about"><li className='hover:text-black hover:underline'>About</li></NavLink>   
             </ul>
         </nav>
     )

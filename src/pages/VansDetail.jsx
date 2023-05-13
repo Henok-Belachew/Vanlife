@@ -37,7 +37,7 @@ export default function Van_Detail () {
     return (
         <div className="px-10 flex flex-col items-start gap-4 mb-8">
             <Link  to="/vans">
-            <span className="text-sm underline font-semibold"><FontAwesomeIcon icon={faArrowLeftLong} style={{color: "#000000",}} />  Back to all vans</span>
+            <span className="text-sm underline font-semibold text-[#4D4D4D] hover:text-black"><FontAwesomeIcon icon={faArrowLeftLong} />  Back to all vans</span>
             </Link>
                  
                  <img className='rounded-lg' src={targetVan.imageUrl} alt="" />

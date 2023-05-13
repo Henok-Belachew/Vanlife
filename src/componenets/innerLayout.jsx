@@ -37,7 +37,7 @@ export default function InnerLayout () {
     }
     return (
         <div className='px-10'>
-            <Link to="/host/vans"> <h3 className='text-sm underline font-semibold'> <FontAwesomeIcon icon={faArrowLeftLong} style={{color: "#000000",}} />  Back to all vans</h3> </Link> 
+            <Link to="/host/vans"> <h3 className='text-sm underline font-semibold text-[#4D4D4D] hover:text-black'> <FontAwesomeIcon icon={faArrowLeftLong} />  Back to all vans</h3> </Link> 
 
             <div className='bg-white p-5 my-4'>
                 <div className='flex flex-row items-center gap-5'>
@@ -52,9 +52,9 @@ export default function InnerLayout () {
                 </div>
                 <nav className=''>
                     <ul className='flex flex-row gap-5 text-sm my-6 font-semibold text-[#4D4D4D]'>
-                        <NavLink end to={`/host/vans/${params.id}`}> <li className='hover:text-black hover:underline'>Details</li> </NavLink>
+                        <NavLink end style={({isActive}) =>  isActive ? styleNav : null} to={`/host/vans/${params.id}`}> <li className='hover:text-black hover:underline'>Details</li> </NavLink>
                         <NavLink style={({isActive}) =>  isActive ? styleNav : null}  to={`/host/vans/${params.id}/pricing`}> <li className='hover:text-black hover:underline'>Pricing</li> </NavLink>
-                        <NavLink to={`/host/vans/${params.id}/photos`}> <li className='hover:text-black hover:underline'>Photos</li> </NavLink>
+                        <NavLink style={({isActive}) =>  isActive ? styleNav : null} to={`/host/vans/${params.id}/photos`}> <li className='hover:text-black hover:underline'>Photos</li> </NavLink>
                     </ul>
                 </nav>
                 <div>
