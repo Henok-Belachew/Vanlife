@@ -7,8 +7,10 @@ import HostLayout from "./componenets/HostLayout";
 import HostVans from "./pages/Host/Vans";
 // import HostVans from "./componenets/hostVans";
 
-
-
+import InnerLayout from "./componenets/innerLayout";
+import Details from "./pages/Host/vans/details";
+import Pricing from "./pages/Host/vans/pricing";
+import Photos from "./pages/Host/vans/Photos";
 
 
 import Layout from "./componenets/layout";
@@ -51,6 +53,11 @@ export default function App () {
                                     <Route path="/host/income" element={<Income/>}/>
                                     <Route path="/host/reviews" element={<Reviews/>}/>
                                     <Route path="/host/vans" element={<HostVans/>}/>
+                                    <Route path="/host/vans/:id" element={<InnerLayout/>}>
+                                        <Route path="/host/vans/:id" element={<Details/>}/>
+                                        <Route path="/host/vans/:id/pricing" element={<Pricing/>}/>
+                                        <Route path="/host/vans/:id/photos" element={<Photos/>}/>
+                                    </Route>
                             </Route>
                             
                     </Route>
