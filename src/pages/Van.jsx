@@ -23,7 +23,7 @@ export default function Van (props) {
     }
     useEffect(() => {
         updateStyle();
-      }, []);
+      });
 
     return (
         <div className="w-[190px]">

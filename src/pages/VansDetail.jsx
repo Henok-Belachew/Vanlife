@@ -30,7 +30,7 @@ export default function Van_Detail () {
     }
     useEffect(() => {
         updateStyle();
-      }, []);
+      });
 
     
 

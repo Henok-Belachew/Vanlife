@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import Van from './Van'
 import Data from '../API'
 
@@ -35,7 +35,8 @@ export default function Vans () {
                     toReturn
                 )
             }  
-        }   
+        } 
+        return ""  
     })
 
     return (

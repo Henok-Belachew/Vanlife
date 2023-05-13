@@ -14,17 +14,17 @@ export default function Income () {
 
                 <div className="my-5 flex flex-col gap-4">
                     <div className='bg-white rounded-md flex flex-row justify-between p-5'>
-                        <h1 className='font-bold text-[30px]'>$720</h1>
+                        <h1 className='font-bold text-[25px]'>$720</h1>
                         <span>1/12/22</span>
                     </div>
 
                     <div className='bg-white rounded-md flex flex-row justify-between p-5'>
-                        <h1 className='font-bold text-[30px]'>$560</h1>
+                        <h1 className='font-bold text-[25px]'>$560</h1>
                         <span>10/11/22</span>
                     </div>
 
                     <div className='bg-white rounded-md flex flex-row justify-between p-5'>
-                        <h1 className='font-bold text-[30px]'>$980</h1>
+                        <h1 className='font-bold text-[25px]'>$980</h1>
                         <span>23/11/22</span>
                     </div>
 

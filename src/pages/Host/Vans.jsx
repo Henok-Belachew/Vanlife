@@ -24,7 +24,7 @@ export function Van (props) {
 export default function Vans () {
 
     const params = useParams()
-    const targetVan = Data.find(van => van.id === params.id);
+   
 
 
     const listed_vans = Data.map((a_van)=> {
@@ -38,8 +38,12 @@ export default function Vans () {
                         img = {a_van.imageUrl}
                         listed = {a_van.listed}
                     />
-                </Link>)   }  
+                </Link>)   }
+        
+        return ""
     })
+
+   
     return (
        <div className='px-10'>
             <h1 className='text-[25px] py-2  font-bold'>Your listed vans</h1>
