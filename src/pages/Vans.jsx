@@ -15,8 +15,11 @@ import { useState } from 'react'
 
 export default function Vans () {
 
-    const [type, setType] = useState("Simple");
+    const [type, setType] = useState("Luxury");
 
+    function updateType (newType) {
+        setType(newType)
+    }
 
     const Vans = Data.map((van) => {
         const toReturn = <Van 
@@ -43,10 +46,27 @@ export default function Vans () {
             <div className="heading">
                 <h2 className="text-[26px]  font-bold">Explore our van options</h2>
                 <div className="w-full flex justify-between my-4 text-xs">
-                    <button className="bg-[#FFEAD0] px-8 py-2 rounded-md">Simple</button>
-                    <button className="bg-[#FFEAD0] px-8 py-2 rounded-md">Luxury</button>
-                    <button className="bg-[#FFEAD0] px-8 py-2 rounded-md">Rugged</button>
-                    <button className="">Clear filters</button>
+                    <button 
+                    onClick={() => {
+                        updateType("Simple")
+
+                    }}
+                     className="bg-[#FFEAD0] px-8 py-2 rounded-md">Simple</button>
+                    <button onClick={() => {
+                        updateType("Luxury")
+
+                    }} className="bg-[#FFEAD0] px-8 py-2 rounded-md">Luxury</button>
+                    <button 
+                    onClick={() => {
+                        updateType("Rugged")
+
+                    }} 
+                     className="bg-[#FFEAD0] px-8 py-2 rounded-md">Rugged</button>
+                    <button 
+                    onClick={() => {
+                        updateType("all")
+
+                    }}  className="">Clear filters</button>
                 </div>
             </div>
 
