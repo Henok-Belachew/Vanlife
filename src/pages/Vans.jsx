@@ -27,10 +27,10 @@ export default function Vans () {
         desc = {van.description}
         img = {van.imageUrl}
         />
-        if (type == "all") {
+        if (type === "all") {
         return (toReturn) }
         else {
-            if (van.type == type) {
+            if (van.type === type) {
                 return (
                     toReturn
                 )

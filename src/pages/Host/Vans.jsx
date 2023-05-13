@@ -1,6 +1,6 @@
 import React from 'react';
 import Data from '../../API';
-import { Link, useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export function Van (props) {
 
@@ -23,7 +23,7 @@ export function Van (props) {
 
 export default function Vans () {
 
-    const params = useParams()
+   
    
 
 
