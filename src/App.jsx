@@ -44,21 +44,21 @@ export default function App () {
                 <div className="relative">
                 <Routes>
                     <Route element={<Layout/>}>
-                            <Route path="/about" element={<About/>}/>
+                            <Route path="about" element={<About/>}/>
                             <Route path="/" element={<Home/>}/>
-                            <Route path="/vans" element={<Vans/>}/>
+                            <Route path="vans" element={<Vans/>}/>
                             {/* <Route path="/host" element={<Host/>}/> */}
-                            <Route path="/vans/:id" element={<Van_Detail/>}/>
+                            <Route path="vans/:id" element={<Van_Detail/>}/>
 
-                            <Route path="/host" element={<HostLayout/>}> 
-                                    <Route path="/host" element={<Dashboard/>}/>
-                                    <Route path="/host/income" element={<Income/>}/>
-                                    <Route path="/host/reviews" element={<Reviews/>}/>
-                                    <Route path="/host/vans" element={<HostVans/>}/>
-                                    <Route path="/host/vans/:id" element={<InnerLayout/>}>
-                                        <Route path="/host/vans/:id" element={<Details/>}/>
-                                        <Route path="/host/vans/:id/pricing" element={<Pricing/>}/>
-                                        <Route path="/host/vans/:id/photos" element={<Photos/>}/>
+                            <Route path="host" element={<HostLayout/>}> 
+                                    <Route index element={<Dashboard/>}/>
+                                    <Route path="income" element={<Income/>}/>
+                                    <Route path="reviews" element={<Reviews/>}/>
+                                    <Route path="vans" element={<HostVans/>}/>
+                                    <Route path="vans/:id" element={<InnerLayout/>}>
+                                        <Route index element={<Details/>}/>
+                                        <Route path="pricing" element={<Pricing/>}/>
+                                        <Route path="photos" element={<Photos/>}/>
                                     </Route>
                             </Route>
                             

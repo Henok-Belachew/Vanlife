@@ -45,7 +45,7 @@ export default function InnerLayout () {
                     </div>
                 </div>
                 <nav className=''>
-                    <ul className='flex flex-row gap-5 text-sm my-3'>
+                    <ul className='flex flex-row gap-5 text-sm my-6 font-semibold'>
                         <Link to={`/host/vans/${params.id}`}> <li>Details</li> </Link>
                         <Link to={`/host/vans/${params.id}/pricing`}> <li>Pricing</li> </Link>
                         <Link to={`/host/vans/${params.id}/photos`}> <li>Photos</li> </Link>

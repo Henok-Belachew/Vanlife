@@ -42,7 +42,7 @@ export default function Vans () {
     })
     return (
        <div className='px-10'>
-            <h1 className='text-[30px] py-2  font-bold'>Your listed vans</h1>
+            <h1 className='text-[25px] py-2  font-bold'>Your listed vans</h1>
 
             <div className="my-5">
     
