@@ -48,7 +48,7 @@ export default function Dashboard () {
                 
             </div>
             <div className='flex justify-between flex-row py-5 bg-orange-200 px-10'>
-                    <h2 className='font-bold text-lg'>Review score <FontAwesomeIcon icon={faStar} style={{color: "#e17654",}} /> 5.0<span className='font-light'>/5</span></h2>
+                    <h2 className='font-bold text-lg flex items-center'>Review score <FontAwesomeIcon className='text-sm px-1 ml-1 block' icon={faStar} style={{color: "#FF8C38",}} /> 5.0<span className='font-light'>/5</span></h2>
                     <span className='text-sm cursor-pointer'>Details</span>
             </div>
             <div className="px-10 my-5">
