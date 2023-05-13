@@ -696,6 +696,14 @@ video {
   width: 160px;
 }
 
+.w-\[60px\] {
+  width: 60px;
+}
+
+.w-\[80px\] {
+  width: 80px;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -766,6 +774,10 @@ video {
 
 .rounded-sm {
   border-radius: 0.125rem;
+}
+
+.rounded {
+  border-radius: 0.25rem;
 }
 
 .bg-\[\#252525\] {

@@ -1,9 +1,11 @@
 import React from 'react'
+import Data from '../../../API';
+import { useParams } from 'react-router-dom';
 
 export default function Photos () {
+    const params = useParams()
+    const targetVan = Data.find(van => van.id === params.id);
     return (
-        <h1>
-            This is the photos section under the vans of host page.
-        </h1>
+       <img className='w-[80px] rounded-md' src={targetVan.imageUrl} alt="" />
     )
 }
