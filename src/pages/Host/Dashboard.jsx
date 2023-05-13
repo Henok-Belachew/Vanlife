@@ -1,5 +1,7 @@
 import React from 'react'
 import Data from '../../API';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 export function Van (props) {
 
@@ -46,7 +48,7 @@ export default function Dashboard () {
                 
             </div>
             <div className='flex justify-between flex-row py-5 bg-orange-200 px-10'>
-                    <h2 className='font-bold text-lg'>Review score 5.0<span className='font-light'>/5</span></h2>
+                    <h2 className='font-bold text-lg'>Review score <FontAwesomeIcon icon={faStar} style={{color: "#e17654",}} /> 5.0<span className='font-light'>/5</span></h2>
                     <span className='text-sm cursor-pointer'>Details</span>
             </div>
             <div className="px-10 my-5">

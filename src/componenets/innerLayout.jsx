@@ -2,6 +2,8 @@ import React from 'react'
 import img from '../images/van2.png'
 import { Outlet, Link, useParams } from 'react-router-dom';
 import Data from '../API';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeftLong } from '@fortawesome/free-solid-svg-icons';
 
 import { useState, useEffect } from 'react';
 
@@ -29,7 +31,7 @@ export default function InnerLayout () {
     const targetVan = Data.find(van => van.id === params.id);
     return (
         <div className='px-10'>
-            <Link to="/host/vans"> <h3 className='text-sm underline font-semibold'>Back to all vans</h3> </Link> 
+            <Link to="/host/vans"> <h3 className='text-sm underline font-semibold'> <FontAwesomeIcon icon={faArrowLeftLong} style={{color: "#000000",}} />  Back to all vans</h3> </Link> 
 
             <div className='bg-white p-5 my-4'>
                 <div className='flex flex-row items-center gap-5'>

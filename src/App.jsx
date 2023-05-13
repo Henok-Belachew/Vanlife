@@ -13,6 +13,7 @@ import Pricing from "./pages/Host/vans/pricing";
 import Photos from "./pages/Host/vans/Photos";
 
 
+
 import Layout from "./componenets/layout";
 
 // Let's import the hosts pages
@@ -30,6 +31,7 @@ import './styles.css'
 // import { About, Vans } from "./Components";
 import {BrowserRouter, Routes, Route, Link} from "react-router-dom"
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 export default function App () {

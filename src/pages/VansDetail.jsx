@@ -3,8 +3,8 @@ import Data from '../API'
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-// import { useEffect, useState } from 'react';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeftLong } from '@fortawesome/free-solid-svg-icons';
 
 export default function Van_Detail () {
 
@@ -37,7 +37,7 @@ export default function Van_Detail () {
     return (
         <div className="px-10 flex flex-col items-start gap-4 mb-8">
             <Link  to="/vans">
-            <span className="back"> -Back to all vans</span>
+            <span className="text-sm underline font-semibold"><FontAwesomeIcon icon={faArrowLeftLong} style={{color: "#000000",}} />  Back to all vans</span>
             </Link>
                  
                  <img className='rounded-lg' src={targetVan.imageUrl} alt="" />
