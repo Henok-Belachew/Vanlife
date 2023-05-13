@@ -1,5 +1,5 @@
 import React from 'react'
-import { Outlet, Link } from 'react-router-dom'
+import { Outlet, NavLink } from 'react-router-dom'
 
 
 export default function HostLayout () {
@@ -7,10 +7,10 @@ export default function HostLayout () {
         <div>
            <nav className="">
                 <ul className='flex flex-row gap-10 px-10 my-5 text-sm font-semibold'>
-                    <Link to="/host"><li className='cursor-pointer'>Dashboard</li></Link>
-                    <Link to="/host/income"><li className='cursor-pointer'>Income</li></Link>
-                    <Link to="/host/vans"><li className='cursor-pointer'>Vans</li></Link>
-                    <Link to="/host/reviews"><li className='cursor-pointer'>Reviews</li></Link>
+                    <NavLink end to="/host"><li className='cursor-pointer'>Dashboard</li></NavLink>
+                    <NavLink to="/host/income"><li className='cursor-pointer'>Income</li></NavLink>
+                    <NavLink to="/host/vans"><li className='cursor-pointer'>Vans</li></NavLink>
+                    <NavLink to="/host/reviews"><li className='cursor-pointer'>Reviews</li></NavLink>
                 </ul>
             </nav> 
 

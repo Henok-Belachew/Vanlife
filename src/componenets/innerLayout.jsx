@@ -1,6 +1,6 @@
 import React from 'react'
 import img from '../images/van2.png'
-import { Outlet, Link, useParams } from 'react-router-dom';
+import { Outlet, NavLink, useParams, Link } from 'react-router-dom';
 import Data from '../API';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeftLong } from '@fortawesome/free-solid-svg-icons';
@@ -45,10 +45,10 @@ export default function InnerLayout () {
                     </div>
                 </div>
                 <nav className=''>
-                    <ul className='flex flex-row gap-5 text-sm my-6 font-semibold'>
-                        <Link to={`/host/vans/${params.id}`}> <li>Details</li> </Link>
-                        <Link to={`/host/vans/${params.id}/pricing`}> <li>Pricing</li> </Link>
-                        <Link to={`/host/vans/${params.id}/photos`}> <li>Photos</li> </Link>
+                    <ul className='flex flex-row gap-5 text-sm my-6 font-semibold text-[#4D4D4D]'>
+                        <NavLink end to={`/host/vans/${params.id}`}> <li>Details</li> </NavLink>
+                        <NavLink to={`/host/vans/${params.id}/pricing`}> <li>Pricing</li> </NavLink>
+                        <NavLink to={`/host/vans/${params.id}/photos`}> <li>Photos</li> </NavLink>
                     </ul>
                 </nav>
                 <div>
